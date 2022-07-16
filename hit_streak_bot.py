@@ -59,12 +59,16 @@ todays_tweets = ['Austin Riley',
  'Andrew McCutchen',
  'Freddie Freeman']
 
-consumer_key = credentials.API_key
-consumer_secret_key = credentials.API_secret_key
-access_token = credentials.access_token
-access_token_secret = credentials.access_token_secret
+# Twitter authorization and connecting to API
+import toml
+keys = toml.load('.keys_folder/secrets.toml')
 
+consumer_key = keys['twitter_keys']['consumer_key']
+consumer_secret = keys['twitter_keys']['consumer_secret']
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+access_token = keys['twitter_keys']['access_token']
+access_token_secret = keys['twitter_keys']['access_token_secret']
+
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
@@ -135,16 +139,22 @@ for game in game_ids:
                     continue
                 
                 if hit_streak >= 5:
-                    print(name, hit_streak)
-                    # save details from the hit to variables
                     pitcher_name = data['allPlays'][i]['matchup']['pitcher']['fullName']
                     pitch_type = data['allPlays'][0]['playEvents'][-1]['details']['type']['description']
                     pitch_speed = data['allPlays'][0]['playEvents'][-1]['pitchData']['startSpeed']
-                    batting_avg =  float(df_streaks.loc[(df_streaks['Player']== name)]['BA'].values[0])
                     exit_velo = data['allPlays'][i]['playEvents'][-1]['hitData']['launchSpeed']
-                    launch_angle = data['allPlays'][i]['playEvents'][-1]['hitData']['launchAngle']
                     
-                    # set emoji for different batting average levels
+                    # set emoji for launch_angle
+                    launch_angle = data['allPlays'][i]['playEvents'][-1]['hitData']['launchAngle']
+                    if 25 <= launch_angle <= 35:
+                        launch_angle_emoji = '\U0001F64C'
+                    elif launch_angle < 10:
+                        launch_angle_emoji = '\U0001F447'
+                    else:
+                        launch_angle_emoji = ''
+                    
+                    # set emoji for batting average 
+                    batting_avg =  float(df.loc[(df['Player']== name)]['BA'].values[0])
                     if .300 <= batting_avg < .400:
                         heat_check_emoji = '\U0001F440'
                     elif .400 <= batting_avg < .500:
@@ -153,6 +163,16 @@ for game in game_ids:
                         heat_check_emoji = '\U0001F60D'
                     else:
                         heat_check_emoji = ''
+                    
+                    # set emoji for exit velocity
+                    # if exit_velo > 110:
+                    # #     exit_velo_emoji = '\U00002757\U00002757'
+                    # if exit_velo >= 100:
+                    #     exit_velo_emoji = '\U00026A1'
+                    if exit_velo >= 90:
+                        exit_velo_emoji = '\U0001F44F'
+                    else:
+                        exit_velo_emoji = ''
                     
                     # Fix batting average to be three significant digits
                     if len(str(batting_avg)) == 4:
