@@ -2,4 +2,4 @@
 *.toml
 
 #.keys folder
-.keys_folder
+.keys_folder/
