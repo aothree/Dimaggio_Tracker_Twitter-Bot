@@ -6,7 +6,7 @@ import re, os
 import matplotlib.pyplot as plt
 import statsapi
 from datetime import date
-import credentials
+import toml
 
 team_dict = {
     108: ('LAA', 'Angels', '#GoHalos'),
@@ -41,26 +41,19 @@ team_dict = {
     158: ('MIL', 'Brewers', '#ThisIsMyCrew')
 }
 
-todays_tweets = ['Austin Riley',
- 'Gleyber Torres',
- 'Teoscar Hernandez',
- 'Amed Rosario',
- 'Seth Brown',
- 'Jose Abreu',
- 'Jonathan India',
- 'Charlie Blackmon',
- 'Nelson Cruz',
- 'Leody Taveras',
- 'Brandon Drury',
- 'Corey Seager',
- 'Tyler Stephenson',
+todays_tweets = ['Jonathan India',
  "Ke'Bryan Hayes",
- 'Trea Turner',
- 'Andrew McCutchen',
- 'Freddie Freeman']
+ 'Corey Seager',
+ 'Austin Riley',
+ 'Amed Rosario',
+ 'Alex Kirilloff',
+ 'Nick Castellanos',
+ 'Brandon Drury',
+ 'Adam Frazier',
+ 'Luke Williams',
+ 'Leody Taveras']
 
 # Twitter authorization and connecting to API
-import toml
 keys = toml.load('.keys_folder/secrets.toml')
 
 consumer_key = keys['twitter_keys']['consumer_key']

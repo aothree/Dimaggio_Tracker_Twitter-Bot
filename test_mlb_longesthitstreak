@@ -107,18 +107,18 @@ googletag.display('usmg_ad_mlb.general_baseball_sports_728x90_1a');
 <td class="number">.407</td>
 <td class="number">.448</td>
 <td class="number">.852</td><td class="number">2022-07-15</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=9847&StartDate=07%2F08%2F2022&EndDate=07%2F15%2F2022">Andrew McCutchen</a>
-</td><td class="number">7</td><td class="number">30</td><td class="number">5</td><td class="number">10</td>
-<td class="number">2</td> <td class="number">9</td><td class="number">1</td><td class="number">10</td>
-<td class="number">.333</td>
-<td class="number">.344</td>
-<td class="number">.567</td><td class="number">2022-07-15</td></tr>
 <tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=21479&StartDate=07%2F07%2F2022&EndDate=07%2F14%2F2022">Nico Hoerner</a>
 </td><td class="number">7</td><td class="number">28</td><td class="number">4</td><td class="number">10</td>
 <td class="number">1</td> <td class="number">2</td><td class="number">0</td><td class="number">2</td>
 <td class="number">.357</td>
 <td class="number">.357</td>
 <td class="number">.571</td><td class="number">2022-07-14</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=9847&StartDate=07%2F08%2F2022&EndDate=07%2F15%2F2022">Andrew McCutchen</a>
+</td><td class="number">7</td><td class="number">30</td><td class="number">5</td><td class="number">10</td>
+<td class="number">2</td> <td class="number">9</td><td class="number">1</td><td class="number">10</td>
+<td class="number">.333</td>
+<td class="number">.344</td>
+<td class="number">.567</td><td class="number">2022-07-15</td></tr>
 <tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=19262&StartDate=07%2F09%2F2022&EndDate=07%2F15%2F2022">Garrett Hampson</a>
 </td><td class="number">7</td><td class="number">23</td><td class="number">6</td><td class="number">7</td>
 <td class="number">0</td> <td class="number">3</td><td class="number">2</td><td class="number">6</td>
@@ -216,6 +216,18 @@ googletag.display('usmg_ad_mlb.general_baseball_sports_728x90_1a');
 <td class="number">.412</td>
 <td class="number">.500</td>
 <td class="number">.471</td><td class="number">2022-06-11</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=6153&StartDate=07%2F10%2F2022&EndDate=07%2F14%2F2022">Eduardo Escobar</a>
+</td><td class="number">5</td><td class="number">21</td><td class="number">2</td><td class="number">6</td>
+<td class="number">1</td> <td class="number">2</td><td class="number">1</td><td class="number">4</td>
+<td class="number">.286</td>
+<td class="number">.318</td>
+<td class="number">.476</td><td class="number">2022-07-14</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=20325&StartDate=07%2F10%2F2022&EndDate=07%2F15%2F2022">Alex Kirilloff</a>
+</td><td class="number">5</td><td class="number">16</td><td class="number">1</td><td class="number">6</td>
+<td class="number">0</td> <td class="number">2</td><td class="number">2</td><td class="number">3</td>
+<td class="number">.375</td>
+<td class="number">.500</td>
+<td class="number">.438</td><td class="number">2022-07-15</td></tr>
 <tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=16512&StartDate=07%2F10%2F2022&EndDate=07%2F15%2F2022">Isiah Kiner-Falefa</a>
 </td><td class="number">5</td><td class="number">18</td><td class="number">0</td><td class="number">6</td>
 <td class="number">0</td> <td class="number">4</td><td class="number">0</td><td class="number">2</td>
@@ -258,18 +270,6 @@ googletag.display('usmg_ad_mlb.general_baseball_sports_728x90_1a');
 <td class="number">.286</td>
 <td class="number">.348</td>
 <td class="number">.333</td><td class="number">2022-06-07</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=6153&StartDate=07%2F10%2F2022&EndDate=07%2F14%2F2022">Eduardo Escobar</a>
-</td><td class="number">5</td><td class="number">21</td><td class="number">2</td><td class="number">6</td>
-<td class="number">1</td> <td class="number">2</td><td class="number">1</td><td class="number">4</td>
-<td class="number">.286</td>
-<td class="number">.318</td>
-<td class="number">.476</td><td class="number">2022-07-14</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=20325&StartDate=07%2F10%2F2022&EndDate=07%2F15%2F2022">Alex Kirilloff</a>
-</td><td class="number">5</td><td class="number">16</td><td class="number">1</td><td class="number">6</td>
-<td class="number">0</td> <td class="number">2</td><td class="number">2</td><td class="number">3</td>
-<td class="number">.375</td>
-<td class="number">.500</td>
-<td class="number">.438</td><td class="number">2022-07-15</td></tr>
 <tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=19931&StartDate=06%2F29%2F2022&EndDate=07%2F14%2F2022">Luke Williams</a>
 </td><td class="number">5</td><td class="number">12</td><td class="number">3</td><td class="number">5</td>
 <td class="number">1</td> <td class="number">2</td><td class="number">2</td><td class="number">3</td>
