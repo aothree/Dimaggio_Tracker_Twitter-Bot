@@ -1,5 +1,5 @@
 # TOML
-.toml
+*.toml
 
 # keys folder
 keys/
