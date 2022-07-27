@@ -1,8 +1,9 @@
+
+# config.py
+config.py
+
 # TOML
 *.toml
-
-# keys folder
-keys/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
