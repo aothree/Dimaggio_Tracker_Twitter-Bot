@@ -9,7 +9,7 @@ import statsapi
 import datetime 
 from datetime import date
 from hit_streak_scraper import scrape_baseball_musings 
-# import time
+import config
 
 # dictionary of team abbreviations, team mascots, and twitter emoji hashtags
 team_dict = {
@@ -45,11 +45,13 @@ team_dict = {
     158: ('MIL', 'Brewers', '#ThisIsMyCrew')
 }
 
-#Twitter Authentification and accessing API
-consumer_key = ''
-consumer_secret = ''
-access_token = ''
-access_token_secret = ''
+# Twitter authentification 
+consumer_key = config.consumer_key
+consumer_secret = config.consumer_secret
+access_token = config.access_token
+access_token_secret = config.access_token_secret
+
+# accessing Twitter API
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
