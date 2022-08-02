@@ -1,4 +1,4 @@
-#!usr/bin/env Python3
+# #!usr/bin/env Python3
 
 import tweepy
 import pandas as pd
@@ -95,7 +95,6 @@ while current_hour <= last_hour_plus_4:
         url = f'https://statsapi.mlb.com/api/v1/game/{game}/playByPlay'
         res = requests.get(url)
         data = res.json()
-        
         for i in range(len(data['allPlays'])-1):
             try: 
                 event = data['allPlays'][i]['result']['event']
@@ -116,7 +115,7 @@ while current_hour <= last_hour_plus_4:
                 
                 # save name and last_name.  Suffixes like "Jr" will need to be added going forward
                 name = data["allPlays"][i]["matchup"]["batter"]["fullName"]
-                        
+
                 if name not in todays_tweets:
                     if 'Jr' in name:
                         last_name = ' '.join(name.split()[-2:])
@@ -153,12 +152,15 @@ while current_hour <= last_hour_plus_4:
                             exit_velo = 'Not Recorded'
                         
                         # set emoji for launch_angle
-                        launch_angle = data['allPlays'][i]['playEvents'][-1]['hitData']['launchAngle']
-                        if 25 <= launch_angle <= 35:
-                            launch_angle_emoji = '\U0001F64C'
-                        elif launch_angle < 10:
-                            launch_angle_emoji = '\U0001F447'
-                        else:
+                        try: 
+                            launch_angle = data['allPlays'][i]['playEvents'][-1]['hitData']['launchAngle']
+                            if 25 <= launch_angle <= 35:
+                                launch_angle_emoji = '\U0001F64C'
+                            elif launch_angle < 10:
+                                launch_angle_emoji = '\U0001F447'
+                            else:
+                                launch_angle_emoji = ''
+                        except:
                             launch_angle_emoji = ''
                         
                         # set emoji for batting average 
@@ -185,13 +187,18 @@ while current_hour <= last_hour_plus_4:
                         #Send Tweet
                         if event == 'Double':
                             upload_result = api.media_upload(r'utah_two.mp4')
-                            text = f'{team_dict[player_team_id][-1]}\n\n{name} hit a {event.lower()}{event_emoji} off of a {pitch_speed} mph {pitch_type.lower()} from {pitcher_name}, and now has a {hit_streak} game hit streak.\n\nExit Velocity: {exit_velo} mph{exit_velo_emoji}\n\nLaunch Angle: {launch_angle} degrees{launch_angle_emoji}\n\n{last_name} is batting {avg_fixed} over this stretch.{heat_check_emoji}'
+                            text = f'{team_dict[player_team_id][-1]}\n\n{name} hit a {event.lower()}{event_emoji} off of an {pitch_speed} mph {pitch_type.lower()} from {pitcher_name}, and now has a {hit_streak} game hit streak.\n\nExit Velocity: {exit_velo} mph{exit_velo_emoji}\n\nLaunch Angle: {launch_angle} degrees{launch_angle_emoji}\n\n{last_name} is batting {avg_fixed} over this stretch.{heat_check_emoji}'
+                            #print('tweet would be fired') # uncomment to debug, comment-out below tweet line
                             api.update_status(status = text, media_ids = [upload_result.media_id_string])
-                            print(f'tweet fired for {name}')
+                            current_hour = datetime.datetime.now().hour 
+                            current_time = datetime.datetime.now()
+                            print(f'tweet fired for {name} at {current_time}')
                         else:
-
-                            api.update_status(f'{team_dict[player_team_id][-1]}\n\n{name} hit a {event.lower()}{event_emoji} off of a {pitch_speed} mph {pitch_type.lower()} from {pitcher_name}, and now has a {hit_streak} game hit streak.\n\nExit Velocity: {exit_velo} mph{exit_velo_emoji}\n\nLaunch Angle: {launch_angle} degrees{launch_angle_emoji}\n\n{last_name} is batting {avg_fixed} over this stretch.{heat_check_emoji}')
-                            print(f'tweet fired for {name}')                                                    
+                            #print('tweet would be fired') #uncomment to debug, and comment below tweet line
+                            api.update_status(f'{team_dict[player_team_id][-1]}\n\n{name} hit a {event.lower()}{event_emoji} off of an {pitch_speed} mph {pitch_type.lower()} from {pitcher_name}, and now has a {hit_streak} game hit streak.\n\nExit Velocity: {exit_velo} mph{exit_velo_emoji}\n\nLaunch Angle: {launch_angle} degrees{launch_angle_emoji}\n\n{last_name} is batting {avg_fixed} over this stretch.{heat_check_emoji}')
+                            current_hour = datetime.datetime.now().hour
+                            current_time = datetime.datetime.now()
+                            print(f'tweet fired for {name} at {current_time}')                                                    
                         
                         todays_tweets.append(name)
                         break
@@ -199,8 +206,8 @@ while current_hour <= last_hour_plus_4:
                         print(f"{name}'s hit streak is less than 5")
                         continue
                 else:
-                    print(f'{name} already tweeted about.  all tweets today: {todays_tweets}')
-
-        current_hour = datetime.datetime.now().hour
+                    print(f"{name} already tweeted about")
+                    continue
+            
 
                 

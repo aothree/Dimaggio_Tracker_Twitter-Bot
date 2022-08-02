@@ -7,8 +7,9 @@ import pandas as pd
 def scrape_baseball_musings():
     # get current hit streak data from baseballmusings.com
     today = date.today()
-    today = str(today)[-2:]
-    url = f'https://www.baseballmusings.com/cgi-bin/CurStreak.py?EndDate=07%2F{today}%2F2022'
+    day = str(today)[-2:]
+    month = str(today)[5:7]
+    url = f'https://www.baseballmusings.com/cgi-bin/CurStreak.py?EndDate={month}%2F{day}%2F2022'
     resp = requests.get(url)
     with open('test_mlb_longesthitstreak', 'wb') as f:
         f.write(resp.content)
@@ -16,4 +17,3 @@ def scrape_baseball_musings():
     df_streaks = pd.DataFrame(df_streaks[1])
     return df_streaks
 
-    
