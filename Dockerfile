@@ -2,7 +2,7 @@ FROM python:latest
 
 WORKDIR /usr/app/src/
 
-COPY s3-Copy1.py config.py utah_two.mp4 hit_streak_scraper.py requirements.txt ./
+COPY dimaggio_twitter_bot.py config.py utah_two.mp4 hit_streak_scraper.py requirements.txt ./
 
 RUN pip install MLB-StatsAPI
 
@@ -26,5 +26,5 @@ RUN pip install boto3
 
 RUN pip install pickle5
 
-CMD ["python", "./s3-Copy1.py"]
+CMD ["python", "./dimaggio_twitter_bot.py"]
 
