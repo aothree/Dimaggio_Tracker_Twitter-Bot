@@ -47,169 +47,151 @@ googletag.display('usmg_ad_mlb.general_baseball_sports_728x90_1a');
 </td></tr>
 <tr><td valign="top">
 <h1>Baseball Musings Day By Day Database, Current Hit Streaks</h1>
-<h2>Through Games of 07/31/2022</h2>
+<h2>Through Games of 08/22/2022</h2>
 <form name="StreakDate" action="https://www.baseballmusings.com/cgi-bin/CurStreak.py" method="get">
-<br>Or enter a Games Through Date: <input type"text" name="EndDate" value ="07/31/2022">
+<br>Or enter a Games Through Date: <input type"text" name="EndDate" value ="08/22/2022">
 <br><input type="submit" value="Submit"></form><br>
 <table class="dbd" border="4">
 <tr class="toprow"><th class="letter">Player</th><th class="number">Games</th><th class="number">At Bats</th><th class="number">Runs</th> <th class="number">Hits</th> <th class="number">HR</th><th class="number">RBI</th><th class="number">BB</th><th class="number">K</th><th class="number">BA</th><th class="number">OBA</th><th class="number">Slug%</th><th class="number">Last Game Date</th></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=16252&StartDate=07%2F09%2F2022&EndDate=07%2F31%2F2022">Trea Turner</a>
-</td><td class="number">18</td><td class="number">78</td><td class="number">17</td><td class="number">27</td>
-<td class="number">5</td> <td class="number">14</td><td class="number">1</td><td class="number">9</td>
-<td class="number">.346</td>
-<td class="number">.354</td>
-<td class="number">.615</td><td class="number">2022-07-31</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=24610&StartDate=07%2F14%2F2022&EndDate=07%2F31%2F2022">Steven Kwan</a>
-</td><td class="number">14</td><td class="number">65</td><td class="number">13</td><td class="number">23</td>
-<td class="number">1</td> <td class="number">5</td><td class="number">2</td><td class="number">6</td>
-<td class="number">.354</td>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=19287&StartDate=08%2F03%2F2022&EndDate=08%2F22%2F2022">Adolis Garcia</a>
+</td><td class="number">19</td><td class="number">77</td><td class="number">12</td><td class="number">23</td>
+<td class="number">2</td> <td class="number">13</td><td class="number">3</td><td class="number">21</td>
+<td class="number">.299</td>
+<td class="number">.341</td>
+<td class="number">.429</td><td class="number">2022-08-22</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=18345&StartDate=08%2F03%2F2022&EndDate=08%2F21%2F2022">Kyle Tucker</a>
+</td><td class="number">14</td><td class="number">59</td><td class="number">11</td><td class="number">23</td>
+<td class="number">3</td> <td class="number">17</td><td class="number">3</td><td class="number">8</td>
+<td class="number">.390</td>
+<td class="number">.419</td>
+<td class="number">.661</td><td class="number">2022-08-21</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=20043&StartDate=07%2F12%2F2022&EndDate=08%2F22%2F2022">Luis Robert</a>
+</td><td class="number">12</td><td class="number">50</td><td class="number">8</td><td class="number">20</td>
+<td class="number">2</td> <td class="number">10</td><td class="number">5</td><td class="number">6</td>
+<td class="number">.400</td>
+<td class="number">.455</td>
+<td class="number">.620</td><td class="number">2022-08-22</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=11737&StartDate=08%2F11%2F2022&EndDate=08%2F22%2F2022">Nick Castellanos</a>
+</td><td class="number">12</td><td class="number">51</td><td class="number">6</td><td class="number">19</td>
+<td class="number">2</td> <td class="number">4</td><td class="number">0</td><td class="number">16</td>
 <td class="number">.373</td>
-<td class="number">.477</td><td class="number">2022-07-31</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=19611&StartDate=07%2F15%2F2022&EndDate=07%2F31%2F2022">Vladimir Guerrero Jr.</a>
-</td><td class="number">12</td><td class="number">47</td><td class="number">12</td><td class="number">20</td>
-<td class="number">1</td> <td class="number">7</td><td class="number">5</td><td class="number">6</td>
-<td class="number">.426</td>
-<td class="number">.491</td>
-<td class="number">.617</td><td class="number">2022-07-31</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=14551&StartDate=07%2F16%2F2022&EndDate=07%2F31%2F2022">Anthony Santander</a>
-</td><td class="number">11</td><td class="number">43</td><td class="number">8</td><td class="number">17</td>
-<td class="number">4</td> <td class="number">10</td><td class="number">1</td><td class="number">7</td>
-<td class="number">.395</td>
-<td class="number">.458</td>
-<td class="number">.744</td><td class="number">2022-07-31</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=11477&StartDate=07%2F17%2F2022&EndDate=07%2F31%2F2022">Christian Yelich</a>
-</td><td class="number">10</td><td class="number">41</td><td class="number">7</td><td class="number">15</td>
-<td class="number">0</td> <td class="number">4</td><td class="number">9</td><td class="number">14</td>
-<td class="number">.366</td>
-<td class="number">.480</td>
-<td class="number">.537</td><td class="number">2022-07-31</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=10243&StartDate=07%2F23%2F2022&EndDate=07%2F31%2F2022">Randal Grichuk</a>
-</td><td class="number">8</td><td class="number">30</td><td class="number">3</td><td class="number">11</td>
-<td class="number">0</td> <td class="number">9</td><td class="number">3</td><td class="number">8</td>
-<td class="number">.367</td>
-<td class="number">.424</td>
-<td class="number">.567</td><td class="number">2022-07-31</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=7802&StartDate=07%2F22%2F2022&EndDate=07%2F31%2F2022">Miguel Rojas</a>
-</td><td class="number">8</td><td class="number">31</td><td class="number">1</td><td class="number">10</td>
-<td class="number">0</td> <td class="number">6</td><td class="number">2</td><td class="number">3</td>
-<td class="number">.323</td>
-<td class="number">.364</td>
-<td class="number">.419</td><td class="number">2022-07-31</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=12916&StartDate=07%2F23%2F2022&EndDate=07%2F31%2F2022">Francisco Lindor</a>
-</td><td class="number">7</td><td class="number">27</td><td class="number">6</td><td class="number">13</td>
-<td class="number">1</td> <td class="number">4</td><td class="number">4</td><td class="number">5</td>
-<td class="number">.481</td>
-<td class="number">.548</td>
-<td class="number">.741</td><td class="number">2022-07-31</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=13723&StartDate=07%2F23%2F2022&EndDate=07%2F31%2F2022">Jacob Stallings</a>
-</td><td class="number">7</td><td class="number">20</td><td class="number">2</td><td class="number">10</td>
-<td class="number">0</td> <td class="number">1</td><td class="number">1</td><td class="number">5</td>
-<td class="number">.500</td>
-<td class="number">.565</td>
-<td class="number">.600</td><td class="number">2022-07-31</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=19566&StartDate=07%2F25%2F2022&EndDate=07%2F31%2F2022">Nathaniel Lowe</a>
-</td><td class="number">7</td><td class="number">26</td><td class="number">2</td><td class="number">9</td>
-<td class="number">2</td> <td class="number">5</td><td class="number">0</td><td class="number">7</td>
-<td class="number">.346</td>
-<td class="number">.346</td>
-<td class="number">.731</td><td class="number">2022-07-31</td></tr>
+<td class="number">.373</td>
+<td class="number">.569</td><td class="number">2022-08-22</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=12916&StartDate=08%2F16%2F2022&EndDate=08%2F22%2F2022">Francisco Lindor</a>
+</td><td class="number">8</td><td class="number">37</td><td class="number">6</td><td class="number">13</td>
+<td class="number">1</td> <td class="number">2</td><td class="number">0</td><td class="number">4</td>
+<td class="number">.351</td>
+<td class="number">.351</td>
+<td class="number">.486</td><td class="number">2022-08-22</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=14387&StartDate=07%2F15%2F2022&EndDate=08%2F22%2F2022">Harold Ramirez</a>
+</td><td class="number">8</td><td class="number">32</td><td class="number">5</td><td class="number">13</td>
+<td class="number">1</td> <td class="number">3</td><td class="number">0</td><td class="number">3</td>
+<td class="number">.406</td>
+<td class="number">.441</td>
+<td class="number">.562</td><td class="number">2022-08-22</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=24610&StartDate=08%2F14%2F2022&EndDate=08%2F20%2F2022">Steven Kwan</a>
+</td><td class="number">7</td><td class="number">31</td><td class="number">4</td><td class="number">11</td>
+<td class="number">0</td> <td class="number">3</td><td class="number">1</td><td class="number">5</td>
+<td class="number">.355</td>
+<td class="number">.375</td>
+<td class="number">.452</td><td class="number">2022-08-20</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=15487&StartDate=08%2F15%2F2022&EndDate=08%2F21%2F2022">Victor Reyes</a>
+</td><td class="number">7</td><td class="number">26</td><td class="number">2</td><td class="number">10</td>
+<td class="number">0</td> <td class="number">6</td><td class="number">3</td><td class="number">3</td>
+<td class="number">.385</td>
+<td class="number">.448</td>
+<td class="number">.462</td><td class="number">2022-08-21</td></tr>
 <tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=19953&StartDate=07%2F24%2F2022&EndDate=07%2F30%2F2022">Josh Lowe</a>
 </td><td class="number">7</td><td class="number">22</td><td class="number">2</td><td class="number">9</td>
 <td class="number">0</td> <td class="number">0</td><td class="number">3</td><td class="number">7</td>
 <td class="number">.409</td>
 <td class="number">.480</td>
 <td class="number">.455</td><td class="number">2022-07-30</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=17907&StartDate=07%2F26%2F2022&EndDate=07%2F31%2F2022">Brendan Rodgers</a>
-</td><td class="number">6</td><td class="number">23</td><td class="number">5</td><td class="number">12</td>
-<td class="number">0</td> <td class="number">0</td><td class="number">2</td><td class="number">4</td>
-<td class="number">.522</td>
-<td class="number">.560</td>
-<td class="number">.609</td><td class="number">2022-07-31</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=16472&StartDate=07%2F26%2F2022&EndDate=07%2F31%2F2022">Rhys Hoskins</a>
-</td><td class="number">6</td><td class="number">26</td><td class="number">4</td><td class="number">10</td>
-<td class="number">1</td> <td class="number">3</td><td class="number">2</td><td class="number">5</td>
-<td class="number">.385</td>
-<td class="number">.429</td>
-<td class="number">.538</td><td class="number">2022-07-31</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=15172&StartDate=07%2F24%2F2022&EndDate=07%2F31%2F2022">Tim Anderson</a>
-</td><td class="number">6</td><td class="number">25</td><td class="number">2</td><td class="number">8</td>
-<td class="number">0</td> <td class="number">1</td><td class="number">0</td><td class="number">7</td>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=16939&StartDate=08%2F15%2F2022&EndDate=08%2F21%2F2022">Lane Thomas</a>
+</td><td class="number">7</td><td class="number">30</td><td class="number">4</td><td class="number">9</td>
+<td class="number">2</td> <td class="number">2</td><td class="number">0</td><td class="number">8</td>
+<td class="number">.300</td>
+<td class="number">.300</td>
+<td class="number">.600</td><td class="number">2022-08-21</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=12856&StartDate=08%2F04%2F2022&EndDate=08%2F21%2F2022">George Springer</a>
+</td><td class="number">6</td><td class="number">19</td><td class="number">6</td><td class="number">11</td>
+<td class="number">0</td> <td class="number">4</td><td class="number">2</td><td class="number">1</td>
+<td class="number">.579</td>
+<td class="number">.619</td>
+<td class="number">.684</td><td class="number">2022-08-21</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=11477&StartDate=08%2F16%2F2022&EndDate=08%2F22%2F2022">Christian Yelich</a>
+</td><td class="number">6</td><td class="number">25</td><td class="number">7</td><td class="number">8</td>
+<td class="number">1</td> <td class="number">4</td><td class="number">3</td><td class="number">6</td>
 <td class="number">.320</td>
-<td class="number">.320</td>
-<td class="number">.400</td><td class="number">2022-07-31</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=17484&StartDate=07%2F23%2F2022&EndDate=07%2F31%2F2022">Eloy Jimenez</a>
-</td><td class="number">6</td><td class="number">22</td><td class="number">5</td><td class="number">8</td>
-<td class="number">3</td> <td class="number">3</td><td class="number">0</td><td class="number">3</td>
+<td class="number">.393</td>
+<td class="number">.480</td><td class="number">2022-08-22</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=18067&StartDate=07%2F22%2F2022&EndDate=08%2F21%2F2022">Garrett Stubbs</a>
+</td><td class="number">6</td><td class="number">22</td><td class="number">9</td><td class="number">8</td>
+<td class="number">2</td> <td class="number">4</td><td class="number">4</td><td class="number">7</td>
 <td class="number">.364</td>
-<td class="number">.364</td>
-<td class="number">.818</td><td class="number">2022-07-31</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=19334&StartDate=07%2F24%2F2022&EndDate=07%2F31%2F2022">Yadiel Hernandez</a>
-</td><td class="number">6</td><td class="number">20</td><td class="number">2</td><td class="number">8</td>
-<td class="number">1</td> <td class="number">3</td><td class="number">0</td><td class="number">4</td>
-<td class="number">.400</td>
-<td class="number">.400</td>
-<td class="number">.600</td><td class="number">2022-07-31</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=17696&StartDate=07%2F26%2F2022&EndDate=07%2F31%2F2022">Kevin Newman</a>
-</td><td class="number">5</td><td class="number">22</td><td class="number">3</td><td class="number">10</td>
-<td class="number">0</td> <td class="number">2</td><td class="number">1</td><td class="number">6</td>
-<td class="number">.455</td>
-<td class="number">.478</td>
-<td class="number">.727</td><td class="number">2022-07-31</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=17027&StartDate=07%2F27%2F2022&EndDate=07%2F31%2F2022">Alex Verdugo</a>
-</td><td class="number">5</td><td class="number">20</td><td class="number">1</td><td class="number">8</td>
-<td class="number">0</td> <td class="number">2</td><td class="number">0</td><td class="number">3</td>
-<td class="number">.400</td>
-<td class="number">.400</td>
-<td class="number">.500</td><td class="number">2022-07-31</td></tr>
+<td class="number">.462</td>
+<td class="number">.636</td><td class="number">2022-08-21</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=21523&StartDate=08%2F16%2F2022&EndDate=08%2F22%2F2022">Jonathan India</a>
+</td><td class="number">6</td><td class="number">23</td><td class="number">4</td><td class="number">6</td>
+<td class="number">1</td> <td class="number">2</td><td class="number">2</td><td class="number">4</td>
+<td class="number">.261</td>
+<td class="number">.346</td>
+<td class="number">.478</td><td class="number">2022-08-22</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=17321&StartDate=08%2F14%2F2022&EndDate=08%2F22%2F2022">Michael Chavis</a>
+</td><td class="number">6</td><td class="number">24</td><td class="number">2</td><td class="number">6</td>
+<td class="number">0</td> <td class="number">2</td><td class="number">0</td><td class="number">5</td>
+<td class="number">.250</td>
+<td class="number">.250</td>
+<td class="number">.333</td><td class="number">2022-08-22</td></tr>
 <tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=24618&StartDate=07%2F06%2F2022&EndDate=07%2F14%2F2022">Ryan Jeffers</a>
 </td><td class="number">5</td><td class="number">20</td><td class="number">4</td><td class="number">8</td>
 <td class="number">2</td> <td class="number">5</td><td class="number">1</td><td class="number">5</td>
 <td class="number">.400</td>
 <td class="number">.429</td>
 <td class="number">.750</td><td class="number">2022-07-14</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=19198&StartDate=07%2F27%2F2022&EndDate=07%2F31%2F2022">Yulieski Gurriel</a>
-</td><td class="number">5</td><td class="number">21</td><td class="number">4</td><td class="number">8</td>
-<td class="number">0</td> <td class="number">1</td><td class="number">0</td><td class="number">2</td>
-<td class="number">.381</td>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=4892&StartDate=08%2F08%2F2022&EndDate=08%2F22%2F2022">Michael Moustakas</a>
+</td><td class="number">5</td><td class="number">20</td><td class="number">3</td><td class="number">7</td>
+<td class="number">1</td> <td class="number">3</td><td class="number">0</td><td class="number">5</td>
+<td class="number">.350</td>
+<td class="number">.350</td>
+<td class="number">.500</td><td class="number">2022-08-22</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=19599&StartDate=08%2F17%2F2022&EndDate=08%2F21%2F2022">Chas McCormick</a>
+</td><td class="number">5</td><td class="number">20</td><td class="number">4</td><td class="number">7</td>
+<td class="number">1</td> <td class="number">6</td><td class="number">2</td><td class="number">5</td>
+<td class="number">.350</td>
 <td class="number">.409</td>
-<td class="number">.524</td><td class="number">2022-07-31</td></tr>
-<tr class="toprow"><th class="letter">Player</th><th class="number">Games</th><th class="number">At Bats</th><th class="number">Runs</th> <th class="number">Hits</th> <th class="number">HR</th><th class="number">RBI</th><th class="number">BB</th><th class="number">K</th><th class="number">BA</th><th class="number">OBA</th><th class="number">Slug%</th><th class="number">Last Game Date</th></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=18314&StartDate=07%2F26%2F2022&EndDate=07%2F31%2F2022">Dansby Swanson</a>
-</td><td class="number">5</td><td class="number">19</td><td class="number">5</td><td class="number">8</td>
-<td class="number">0</td> <td class="number">0</td><td class="number">2</td><td class="number">3</td>
-<td class="number">.421</td>
-<td class="number">.476</td>
-<td class="number">.474</td><td class="number">2022-07-31</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=16403&StartDate=07%2F15%2F2022&EndDate=07%2F25%2F2022">Francisco Mejia</a>
-</td><td class="number">5</td><td class="number">19</td><td class="number">5</td><td class="number">8</td>
-<td class="number">1</td> <td class="number">4</td><td class="number">0</td><td class="number">7</td>
-<td class="number">.421</td>
-<td class="number">.421</td>
-<td class="number">.684</td><td class="number">2022-07-25</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=13788&StartDate=07%2F24%2F2022&EndDate=07%2F29%2F2022">Matt Reynolds</a>
-</td><td class="number">5</td><td class="number">18</td><td class="number">3</td><td class="number">7</td>
-<td class="number">0</td> <td class="number">3</td><td class="number">0</td><td class="number">5</td>
-<td class="number">.389</td>
-<td class="number">.389</td>
-<td class="number">.389</td><td class="number">2022-07-29</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=12532&StartDate=07%2F26%2F2022&EndDate=07%2F31%2F2022">Kolten Wong</a>
-</td><td class="number">5</td><td class="number">17</td><td class="number">7</td><td class="number">7</td>
-<td class="number">1</td> <td class="number">2</td><td class="number">3</td><td class="number">2</td>
+<td class="number">.550</td><td class="number">2022-08-21</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=7859&StartDate=08%2F16%2F2022&EndDate=08%2F21%2F2022">Charlie Blackmon</a>
+</td><td class="number">5</td><td class="number">17</td><td class="number">1</td><td class="number">7</td>
+<td class="number">0</td> <td class="number">6</td><td class="number">1</td><td class="number">5</td>
 <td class="number">.412</td>
-<td class="number">.476</td>
-<td class="number">.824</td><td class="number">2022-07-31</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=10472&StartDate=05%2F31%2F2022&EndDate=06%2F07%2F2022">Enrique Hernandez</a>
-</td><td class="number">5</td><td class="number">21</td><td class="number">1</td><td class="number">6</td>
-<td class="number">0</td> <td class="number">1</td><td class="number">2</td><td class="number">5</td>
+<td class="number">.474</td>
+<td class="number">.471</td><td class="number">2022-08-21</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=17338&StartDate=08%2F15%2F2022&EndDate=08%2F21%2F2022">Willi Castro</a>
+</td><td class="number">5</td><td class="number">16</td><td class="number">2</td><td class="number">6</td>
+<td class="number">1</td> <td class="number">3</td><td class="number">2</td><td class="number">2</td>
+<td class="number">.375</td>
+<td class="number">.474</td>
+<td class="number">.625</td><td class="number">2022-08-21</td></tr>
+<tr class="toprow"><th class="letter">Player</th><th class="number">Games</th><th class="number">At Bats</th><th class="number">Runs</th> <th class="number">Hits</th> <th class="number">HR</th><th class="number">RBI</th><th class="number">BB</th><th class="number">K</th><th class="number">BA</th><th class="number">OBA</th><th class="number">Slug%</th><th class="number">Last Game Date</th></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=16451&StartDate=08%2F09%2F2022&EndDate=08%2F14%2F2022">Luis Guillorme</a>
+</td><td class="number">5</td><td class="number">17</td><td class="number">2</td><td class="number">6</td>
+<td class="number">0</td> <td class="number">1</td><td class="number">0</td><td class="number">1</td>
+<td class="number">.353</td>
+<td class="number">.353</td>
+<td class="number">.353</td><td class="number">2022-08-14</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=17929&StartDate=08%2F15%2F2022&EndDate=08%2F21%2F2022">Cedric Mullins II</a>
+</td><td class="number">5</td><td class="number">21</td><td class="number">5</td><td class="number">6</td>
+<td class="number">1</td> <td class="number">1</td><td class="number">3</td><td class="number">6</td>
 <td class="number">.286</td>
-<td class="number">.348</td>
-<td class="number">.333</td><td class="number">2022-06-07</td></tr>
-<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=10681&StartDate=07%2F14%2F2022&EndDate=07%2F27%2F2022">Giovanny Urshela</a>
-</td><td class="number">5</td><td class="number">18</td><td class="number">3</td><td class="number">6</td>
-<td class="number">1</td> <td class="number">7</td><td class="number">2</td><td class="number">2</td>
-<td class="number">.333</td>
-<td class="number">.381</td>
-<td class="number">.667</td><td class="number">2022-07-27</td></tr>
+<td class="number">.375</td>
+<td class="number">.619</td><td class="number">2022-08-21</td></tr>
+<tr><td class="letter"><a href="https://www.baseballmusings.com/cgi-bin/PlayerInfo.py?PlayerID=5827&StartDate=08%2F16%2F2022&EndDate=08%2F21%2F2022">Wilmer Flores</a>
+</td><td class="number">5</td><td class="number">19</td><td class="number">0</td><td class="number">5</td>
+<td class="number">0</td> <td class="number">1</td><td class="number">2</td><td class="number">4</td>
+<td class="number">.263</td>
+<td class="number">.318</td>
+<td class="number">.526</td><td class="number">2022-08-21</td></tr>
 </table>
 <p>The information used here was obtained free of charge from and is copyrighted by Retrosheet.  Interested parties may contact <a href="https://www.retrosheet.org">Retrosheet</a> at 20 Sunset Rd., Newark, DE 19711. Newer data was purchased from <a href="https://www.baseballinfosolutions.com">Baseball Info Solutions</a>.</p>
 </td><td valign="top" style="width:250px">

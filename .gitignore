@@ -1,9 +1,20 @@
 
-# config.py
+# specific .py files
+deploy_with_open.py
 config.py
+hit_streak_bot.py
+reset_tweets_list.py
+s3.py
 
-# TOML
+
+#any jupyter notebooks
+*.ipynb
+
+# any toml file
 *.toml
+
+# test_mlb_longesthitstreak
+*test_mlb_longesthitstreak
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

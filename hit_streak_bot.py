@@ -92,6 +92,7 @@ while current_hour <= last_hour_plus_4:
     # loop through active games
     game_ids = get_active_game_ids()[1] 
     for game in game_ids:
+        print(f'scraping game id {game}')
         url = f'https://statsapi.mlb.com/api/v1/game/{game}/playByPlay'
         res = requests.get(url)
         data = res.json()
@@ -117,6 +118,7 @@ while current_hour <= last_hour_plus_4:
                 name = data["allPlays"][i]["matchup"]["batter"]["fullName"]
 
                 if name not in todays_tweets:
+
                     if 'Jr' in name:
                         last_name = ' '.join(name.split()[-2:])
                     else:
@@ -132,82 +134,78 @@ while current_hour <= last_hour_plus_4:
                     else:
                         continue
 
-                    if hit_streak >= 5:
-                        # save details from the hit to variables
-                        pitcher_name = data['allPlays'][i]['matchup']['pitcher']['fullName']
-                        pitch_type = data['allPlays'][0]['playEvents'][-1]['details']['type']['description']
-                        pitch_speed = data['allPlays'][0]['playEvents'][-1]['pitchData']['startSpeed']
-                        try:
-                            exit_velo = data['allPlays'][i]['playEvents'][-1]['hitData']['launchSpeed']
-                            # set emoji for exit velocity
-                            if exit_velo > 110:
-                                exit_velo_emoji = '\U0000203C'
-                            elif exit_velo >= 100:
-                                exit_velo_emoji = '\U000026A1'
-                            elif exit_velo >= 90:
-                                exit_velo_emoji = '\U0001F44F'
-                            else:
-                                exit_velo_emoji = ''
-                        except:
-                            exit_velo = 'Not Recorded'
-                        
-                        # set emoji for launch_angle
-                        try: 
-                            launch_angle = data['allPlays'][i]['playEvents'][-1]['hitData']['launchAngle']
-                            if 25 <= launch_angle <= 35:
-                                launch_angle_emoji = '\U0001F64C'
-                            elif launch_angle < 10:
-                                launch_angle_emoji = '\U0001F447'
-                            else:
-                                launch_angle_emoji = ''
-                        except:
+                    # save details from the hit to variables
+                    pitcher_name = data['allPlays'][i]['matchup']['pitcher']['fullName']
+                    pitch_type = data['allPlays'][0]['playEvents'][-1]['details']['type']['description']
+                    pitch_speed = data['allPlays'][0]['playEvents'][-1]['pitchData']['startSpeed']
+                    try:
+                        exit_velo = data['allPlays'][i]['playEvents'][-1]['hitData']['launchSpeed']
+                        # set emoji for exit velocity
+                        if exit_velo > 110:
+                            exit_velo_emoji = '\U0000203C'
+                        elif exit_velo >= 100:
+                            exit_velo_emoji = '\U000026A1'
+                        elif exit_velo >= 90:
+                            exit_velo_emoji = '\U0001F44F'
+                        else:
+                            exit_velo_emoji = ''
+                    except:
+                        exit_velo = 'Not Recorded'
+                    
+                    # set emoji for launch_angle
+                    try: 
+                        launch_angle = data['allPlays'][i]['playEvents'][-1]['hitData']['launchAngle']
+                        if 25 <= launch_angle <= 35:
+                            launch_angle_emoji = '\U0001F64C'
+                        elif launch_angle < 10:
+                            launch_angle_emoji = '\U0001F447'
+                        else:
                             launch_angle_emoji = ''
-                        
-                        # set emoji for batting average 
-                        batting_avg =  float(df_streaks.loc[(df_streaks['Player']== name)]['BA'].values[0])
-                        
-                        if .300 <= batting_avg < .400:
-                            heat_check_emoji = '\U0001F440'
-                        elif .400 <= batting_avg < .500:
-                            heat_check_emoji = '\U0001F525'
-                        elif batting_avg >= .500:
-                            heat_check_emoji = '\U0001F60D'
-                        else:
-                            heat_check_emoji = ''
-                        
-                        # Fix batting average to be three significant digits                 
-                        if len(str(batting_avg)) == 4:
-                            avg_fixed = str(batting_avg) + '0'
-                        elif len(str(batting_avg)) == 3:
-                            avg_fixed = str(batting_avg) + '00'
-                        else:
-                            avg_fixed = batting_avg
-                        avg_fixed = str(avg_fixed).lstrip('0')
-                        
-                        #Send Tweet
-                        if event == 'Double':
-                            upload_result = api.media_upload(r'utah_two.mp4')
-                            text = f'{team_dict[player_team_id][-1]}\n\n{name} hit a {event.lower()}{event_emoji} off of an {pitch_speed} mph {pitch_type.lower()} from {pitcher_name}, and now has a {hit_streak} game hit streak.\n\nExit Velocity: {exit_velo} mph{exit_velo_emoji}\n\nLaunch Angle: {launch_angle} degrees{launch_angle_emoji}\n\n{last_name} is batting {avg_fixed} over this stretch.{heat_check_emoji}'
-                            #print('tweet would be fired') # uncomment to debug, comment-out below tweet line
-                            api.update_status(status = text, media_ids = [upload_result.media_id_string])
-                            current_hour = datetime.datetime.now().hour 
-                            current_time = datetime.datetime.now()
-                            print(f'tweet fired for {name} at {current_time}')
-                        else:
-                            #print('tweet would be fired') #uncomment to debug, and comment below tweet line
-                            api.update_status(f'{team_dict[player_team_id][-1]}\n\n{name} hit a {event.lower()}{event_emoji} off of an {pitch_speed} mph {pitch_type.lower()} from {pitcher_name}, and now has a {hit_streak} game hit streak.\n\nExit Velocity: {exit_velo} mph{exit_velo_emoji}\n\nLaunch Angle: {launch_angle} degrees{launch_angle_emoji}\n\n{last_name} is batting {avg_fixed} over this stretch.{heat_check_emoji}')
-                            current_hour = datetime.datetime.now().hour
-                            current_time = datetime.datetime.now()
-                            print(f'tweet fired for {name} at {current_time}')                                                    
-                        
-                        todays_tweets.append(name)
-                        break
+                    except:
+                        launch_angle_emoji = ''
+                    
+                    # set emoji for batting average 
+                    batting_avg =  float(df_streaks.loc[(df_streaks['Player']== name)]['BA'].values[0])
+                    
+                    if .300 <= batting_avg < .400:
+                        heat_check_emoji = '\U0001F440'
+                    elif .400 <= batting_avg < .500:
+                        heat_check_emoji = '\U0001F525'
+                    elif batting_avg >= .500:
+                        heat_check_emoji = '\U0001F60D'
                     else:
-                        print(f"{name}'s hit streak is less than 5")
-                        continue
+                        heat_check_emoji = ''
+                    
+                    # Fix batting average to be three significant digits                 
+                    if len(str(batting_avg)) == 4:
+                        avg_fixed = str(batting_avg) + '0'
+                    elif len(str(batting_avg)) == 3:
+                        avg_fixed = str(batting_avg) + '00'
+                    else:
+                        avg_fixed = batting_avg
+                    avg_fixed = str(avg_fixed).lstrip('0')
+                    
+                    #Send Tweet
+                    if event == 'Double':
+                        upload_result = api.media_upload(r'utah_two.mp4')
+                        text = f'{team_dict[player_team_id][-1]}\n\n{name} hit a {event.lower()}{event_emoji} off of an {pitch_speed} mph {pitch_type.lower()} from {pitcher_name}, and now has a {hit_streak} game hit streak.\n\nExit Velocity: {exit_velo} mph{exit_velo_emoji}\n\nLaunch Angle: {launch_angle} degrees{launch_angle_emoji}\n\n{last_name} is batting {avg_fixed} over this stretch.{heat_check_emoji}'
+                        #print('tweet would be fired') # uncomment to debug, comment-out below tweet line
+                        api.update_status(status = text, media_ids = [upload_result.media_id_string])
+                        current_hour = datetime.datetime.now().hour 
+                        current_time = datetime.datetime.now()
+                        print(f'tweet fired for {name} at {current_time}')
+                    else:
+                        #print('tweet would be fired') #uncomment to debug, and comment below tweet line
+                        api.update_status(f'{team_dict[player_team_id][-1]}\n\n{name} hit a {event.lower()}{event_emoji} off of an {pitch_speed} mph {pitch_type.lower()} from {pitcher_name}, and now has a {hit_streak} game hit streak.\n\nExit Velocity: {exit_velo} mph{exit_velo_emoji}\n\nLaunch Angle: {launch_angle} degrees{launch_angle_emoji}\n\n{last_name} is batting {avg_fixed} over this stretch.{heat_check_emoji}')
+                        current_hour = datetime.datetime.now().hour
+                        current_time = datetime.datetime.now()
+                        print(f'tweet fired for {name} at {current_time}')                                                    
+                    
+                    todays_tweets.append(name)
+                    break
+                    
                 else:
-                    print(f"{name} already tweeted about")
                     continue
-            
+                
 
                 
