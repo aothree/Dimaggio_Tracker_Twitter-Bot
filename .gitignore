@@ -7,9 +7,14 @@ reset_tweets_list.py
 s3.py
 
 
-#any jupyter notebooks
+#all jupyter notebooks
 *.ipynb
 .ipynb_checkpoints
+baseball_musings.ipynb
+mlb_stats_api.ipynb
+test_mlb_longesthitstreak
+test_tweets.ipynb
+tweeting.ipynb
 
 # any toml file
 *.toml
