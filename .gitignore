@@ -9,6 +9,7 @@ s3.py
 
 #any jupyter notebooks
 *.ipynb
+.ipynb_checkpoints
 
 # any toml file
 *.toml
