@@ -1,3 +1,5 @@
+# notebooks folder 
+notebooks/
 
 # specific .py files
 deploy_with_open.py
